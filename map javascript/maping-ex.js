@@ -389,11 +389,12 @@ and return an array that have the string with odd length in even index
 var strings= ["alex","mercer","madrasa","rashed2","emad","hala"]
 Ex: evenIndexOddLength(strings) => ["madrasa"]
 */
+/*
 var strings= ["alex","mercer","madrasa","rashed2","emad","hala"]
 var result = strings.filter(word => word.length % 2 == 0);
 
 console.log(result);
-
+*/
 /*
 14
 Using the varabile persons
@@ -421,3 +422,11 @@ var strings =["alex","mercer","madrasa","rashed2","emad","hala"],
 
 console.log(result);
 */
+function shorterThan(arr, num) {
+  return arr.filter(function (x, index) {
+      if (x.length < num) {
+          return x;
+      };
+  });
+};
+console.log(shorterThan(["alex", "mercer", "madrasa", "rashed2", "emad", "hala"], 5));
